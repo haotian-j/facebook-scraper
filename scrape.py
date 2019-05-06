@@ -20,6 +20,7 @@ def page_nav(pageName):
     driver.find_element_by_link_text(pageName).click()
 #infinite see more posts loop
 def more_posts_loop():
+    
     elem = driver.find_elements_by_link_text("See More Posts")
     while len(elem) > 0:
         driver.find_element_by_link_text("See More Posts").click()
